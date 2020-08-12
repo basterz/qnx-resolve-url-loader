@@ -16,7 +16,7 @@ var valueProcessor   = require('./lib/value-processor');
 var joinFn           = require('./lib/join-function');
 var logToTestHarness = require('./lib/log-to-test-harness');
 
-var PACKAGE_NAME = "resolve-url-loader";
+var PACKAGE_NAME = require('./package.json').name;
 
 /**
  * A webpack loader that resolves absolute url() paths relative to their original source file.
